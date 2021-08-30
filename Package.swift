@@ -3,5 +3,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "SocketIO"
+    name: "SocketIO",
+    products: [
+        .library(name: "SocketIO", targets: ["SocketIO"])
+    ],
+    targets: [
+        .target(name: "SocketIO")
+    ]
 )
